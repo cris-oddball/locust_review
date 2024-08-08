@@ -1,2 +1,2 @@
-# locust_review
-A review of using Locust to validate notifications
+# Locust Overeview
+A look into using Locust to validate notifications
