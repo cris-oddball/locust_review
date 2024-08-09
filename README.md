@@ -14,9 +14,9 @@ locust -f load_test_email.py -u 2 -r 1 -t 10s -H https://sandbox-api.va.gov/vano
 ```
 
 arguments:
-- -f <filename> to run
-- -u <int> number of users to spawn
-- -r <float> rate per second at which to spawn users
-- -t <time string> stop after specified time, run only with headless or auto-start, else runs forever
-- -H base url, here defaults to Perf
-- --headless  disables the web interface
+- `-f` filename to run
+- `-u` int, number of users to spawn
+- `-r` float, rate per second at which to spawn users
+- `-t` time string, stop after specified time, run only with headless or auto-start, else runs forever
+- `-H` base url, here defaults to Perf
+- `--headless`  disables the web interface
