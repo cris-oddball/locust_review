@@ -17,6 +17,7 @@ class SendEmail(HttpUser):
     """
     def on_start(self) -> None:
         self.api_key = os.environ.get('API_KEY')
+        self.email_address = os.environ.get('EMAIL_ADDRESS')
         self.email_template_id = os.environ.get('EMAIL_TEMPLATE_ID')
         self.service_id = os.environ.get('SERVICE_ID')
 
@@ -44,7 +45,7 @@ class SendEmail(HttpUser):
         }
         payload = {
             'template_id': self.email_template_id,
-            'email_address': 'vanotify.qa@gmail.com'
+            'email_address': self.email_address
         }
         self.client.post(
             '/v2/notifications/email',
