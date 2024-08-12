@@ -4,9 +4,10 @@ version = "0.1.0"
 description = "An overview of using Locust for load testing notifications"
 authors = ["cris-oddball <cris.stoddard@oddball.io>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 python-dotenv = "^1.0.1"
 locust = "^2.31.0"
 pyJWT = "^2.8.0"
