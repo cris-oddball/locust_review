@@ -3,7 +3,7 @@ A look into using Locust to validate notifications. Only for demo purposes, idea
 
 Documentation [here](https://docs.locust.io/en/stable/what-is-locust.html)
 
-1. Use Python 3.11 (pyenv recommended if using multiple Python versions)
+1. Use Python 3.12 (pyenv recommended if using multiple Python versions)
 2. Install Poetry
 3. Pull down this repo
 4. Run `poetry install`
