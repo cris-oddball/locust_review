@@ -10,8 +10,11 @@ Documentation [here](https://docs.locust.io/en/stable/what-is-locust.html)
 5. Copy the `example.env` file locally to .env and add information (project would use boto3 to pull these secrets)
 6. Run the tests:
 ```
-locust -f load_test_email.py -u 2 -r 1 -t 10s -H https://sandbox-api.va.gov/vanotify --headless
+locust -f load_test_email.py -u 2 -r 1 -t 10s -H https://sandbox-api.va.gov/vanotify --headless --html test_report_xx.html --only-summary
 ```
+
+With 1 user and 1 user spawned per second for 60 seconds, we get 266 requests
+With 2 users, 1 user spawned per sec for 60 seconds, we get 539 requests
 
 arguments:
 - `-f` filename to run
@@ -20,3 +23,4 @@ arguments:
 - `-t` time string, stop after specified time, run only with headless or auto-start, else runs forever
 - `-H` base url, here defaults to Perf
 - `--headless`  disables the web interface
+
